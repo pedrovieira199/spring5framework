@@ -3,3 +3,10 @@ guru:
     username: JMSUSERNAME
     password: somepass
     url: SomeURL
+
+--- # Indica divisão de ficheiro
+spring:
+  profiles: de
+guru:
+  jms:
+    username: JMSUSERNAME $$$$$$$$$$$$$$$$ GERMAN
