@@ -1,0 +1,41 @@
+package guru.springframework.spring5recipeapp.domain;
+
+import javax.persistence.*;
+
+@Entity
+public class Notes {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long iD;
+
+    @OneToOne
+    private Recipe recipe;
+
+    @Lob
+    private String recipeNotes;
+
+    public Long getiD() {
+        return iD;
+    }
+
+    public void setiD(Long iD) {
+        this.iD = iD;
+    }
+
+    public Recipe getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(Recipe recipe) {
+        this.recipe = recipe;
+    }
+
+    public String getRecipeNotes() {
+        return recipeNotes;
+    }
+
+    public void setRecipeNotes(String recipeNotes) {
+        this.recipeNotes = recipeNotes;
+    }
+}
