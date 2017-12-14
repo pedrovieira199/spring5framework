@@ -9,15 +9,15 @@ import javax.persistence.Id;
 public class UnitOfMeasure {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long iD;
+    private Long id;
     private String description;
 
     public Long getiD() {
-        return iD;
+        return id;
     }
 
-    public void setiD(Long iD) {
-        this.iD = iD;
+    public void setiD(Long id) {
+        this.id = id;
     }
 
     public String getDescription() {
